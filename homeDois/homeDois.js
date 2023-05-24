@@ -1,3 +1,29 @@
+const pesquisar = document.getElementById('pesquisa');
+const sendBox = document.getElementById('send');
+const home = document.getElementById('mainContainer');
+const close = document.getElementById('close');
+
+pesquisar.addEventListener('click', function() {
+  sendBox.style.display = 'block';
+  home.style.display = 'none';
+
+  sendBox.classList.add('ativo');
+  pesquisar.classList.remove('ativo');
+});
+
+close.addEventListener('click', function() {
+  sendBox.style.display = 'none';
+  home.style.display = 'block';
+});
+
+document.addEventListener('click', function(event) {
+  if (!event.target.closest('#pesquisa') && !event.target.closest('#send')) {
+    sendBox.style.display = 'none';
+    home.style.display = 'block';
+  }
+});
+
+
 var prevScrollPos = window.pageYOffset;
 var navBar = document.getElementById('navBar');
 var pesquisaBtn = document.getElementById('pesquisa');
@@ -99,6 +125,7 @@ navCarteira.addEventListener('click', function() {
   navCarteira.classList.add('ativo');
   navConfig.classList.remove('ativo');
 
+
   this.blur();
 });
 
@@ -134,27 +161,4 @@ document.getElementById('pesquisaInput').addEventListener('keyup', function(even
 })
 
 
-const pesquisar = document.getElementById('pesquisa');
-const sendBox = document.getElementById('send');
-const home = document.getElementById('mainContainer');
-const close = document.getElementById('close');
 
-pesquisar.addEventListener('click', function() {
-  sendBox.style.display = 'block';
-  home.style.display = 'none';
-
-  sendBox.classList.add('ativo');
-  pesquisar.classList.remove('ativo');
-});
-
-close.addEventListener('click', function() {
-  sendBox.style.display = 'none';
-  home.style.display = 'block';
-});
-
-document.addEventListener('click', function(event) {
-  if (!event.target.closest('#pesquisa') && !event.target.closest('#send')) {
-    sendBox.style.display = 'none';
-    home.style.display = 'block';
-  }
-});

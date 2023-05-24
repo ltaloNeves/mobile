@@ -24,7 +24,7 @@ hr{background-color: black;}
     bottom: 0px;   
     left: 0;
     width: 100vw;
-    height: 50px; 
+    height: 60px;  
     background-color: snow;
     display: flex;
     justify-content: space-around;
@@ -61,8 +61,8 @@ hr{background-color: black;}
     position: fixed;
     bottom: 80px;     
     right: 10px;    
-    width: 70px;
-    height: 70px;
+    width: 60px; 
+    height: 60px;
     border-radius: 50%;
     background: #BA55D3;
     box-shadow: inset 5px 5px 28px #7b388b,
