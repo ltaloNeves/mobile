@@ -351,6 +351,7 @@ main #socialContainer .cont .user {
     height: 36px;  
     width:90%;
     border-radius: 10px;  
+    background-color: rgba(0,0,0, 0);
 }
 
 .sendV .public {
@@ -372,3 +373,8 @@ main #socialContainer .cont .user {
     align-items: center;
     justify-content: center0;
 }
+
+::placeholder{
+    color: black;
+    text-indent: 10px; 
+} 
