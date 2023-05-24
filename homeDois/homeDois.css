@@ -1,8 +1,8 @@
 *{text-decoration: none; color: black;} 
 
 img{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     border-radius: 25px;
 }
 
@@ -46,8 +46,8 @@ hr{background-color: black;}
 
 }
 .navBar button img{
-    width: 40px; 
-    height: 50px;
+    width: 30px; 
+    height: 30px;  
 }
 .navBar button:active{
     border-bottom:  2px solid purple;
@@ -339,3 +339,35 @@ main #socialContainer .cont .user {
 
 }
 
+.sendV fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+.sendV input{
+    margin: 10px;
+    border: 1px solid #BA55D3;
+    height: 36px;  
+    width:90%;
+    border-radius: 10px;  
+}
+
+.sendV .public {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.sendV .public button {
+    width: 130px;
+    height: 30px; 
+    background-color: rgba(186,85,211, 0.5) ;
+    border: none;
+    border-radius: 10px; 
+
+}
+.sendV header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

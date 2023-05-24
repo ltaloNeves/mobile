@@ -2,7 +2,9 @@ const pesquisar = document.getElementById('pesquisa');
 const sendBox = document.getElementById('send');
 const home = document.getElementById('mainContainer');
 const close = document.getElementById('close');
+const sendV = document.getElementById('sendV');
 
+ 
 pesquisar.addEventListener('click', function() {
   sendBox.style.display = 'block';
   home.style.display = 'none';
@@ -22,6 +24,7 @@ document.addEventListener('click', function(event) {
     home.style.display = 'block';
   }
 });
+
 
 
 var prevScrollPos = window.pageYOffset;

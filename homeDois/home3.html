@@ -1,29 +1,39 @@
 <link rel="stylesheet" href="./homeDois.css">
-<div id="send" class="send">
+<div id="sendV" class="sendV">
     <div class="public">
         <p>X</p>
-        <button id="pub" class="pub">Publicar</button>
+        <button id="pub" class="pub">Adicionar</button>
 
     </div>
 
     <header>
         <img src="../Projeto Mobile/avatar/perfil.png" alt="">
-        <button id="tweet" class="tweet">Pensamento</button>
-    </header>
-    <div class="txt">
-        <p>o que esta pensando?</p>    
-        <div class="input">
-            <input type="text">
-        </div>
-    </div>
-
-
     
-    <div class="footerMidia">
-        <button><img src="../Projeto Mobile/icons/image_FILL0_wght300_GRAD-25_opsz48.png" alt=""></button>
-        <button><img src="../Projeto Mobile/icons/description_FILL0_wght300_GRAD-25_opsz48.png" alt=""></button>
-        <button><img src="../Projeto Mobile/icons/movie_FILL0_wght300_GRAD-25_opsz48.png" alt=""></button>
-        
+    </header>
+    <div class="txt">  
+        <div class="input">
+            <form action="">
+                <fieldset>
+                    <input type="text " placeholder="Nome da vacina">
+                    <input type="" placeholder="Número da dose" list="sugestoes">
+                    <datalist id="sugestoes">
+                        <option value="Primeira dose"></option>
+                        <option value="Segunda dose"></option>
+                        <option value="Terceira dose"></option>
+                        <option value="Quarta dose"></option> 
+                    </datalist>
+                    <input type="date" placeholder="data">
+
+                </fieldset>
+            </form>
+
+
+              
+
+            
+
+        </div>
+    </div>    
     </div>
 
     <script src="./homeDois.js"></script>
