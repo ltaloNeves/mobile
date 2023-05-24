@@ -174,9 +174,3 @@ pesquisarDois.addEventListener('click',  function() {
 
 })
 
-document.addEventListener('click', function(event) {
-  if (!event.target.closest('#pesquisaDoisNews') && !event.target.closest('#sendV')) {
-    sendV.style.display = 'none';
-    carteiraContainer.style.display = 'block';
-  }
-}); 
