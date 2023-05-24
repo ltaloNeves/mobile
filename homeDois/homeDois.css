@@ -1,380 +1,346 @@
-*{text-decoration: none; color: black;} 
-
-img{
-    height: 40px;
-    width: 40px;
-    border-radius: 25px;
+* {
+  text-decoration: none;
+  color: black;
 }
 
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px
-
-
+img {
+  height: 40px;
+  width: 40px;
+  border-radius: 25px;
 }
-hr{background-color: black;}
 
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+hr {
+  background-color: black;
+}
 
-
-.navBar{
-    position: fixed;
-    bottom: 0px;   
-    left: 0;
-    width: 100vw;
-    height: 60px;  
-    background-color: snow;
-    display: flex;
-    justify-content: space-around;
-    transition: transform 0.3s;
-    transform: translateY(0);
-    opacity: 1;
- 
-
-
+.navBar {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+  background-color: snow;
+  display: flex;
+  justify-content: space-around;
+  transition: transform 0.3s;
+  transform: translateY(0);
+  opacity: 1;
 }
 .navBar.hide {
-    transform: translateY(100%);
-  }
-
-.navBar button{
-    background-color: rgba(0,0,0,0); 
-    border: none;
-
-
-}
-.navBar button img{
-    width: 30px; 
-    height: 30px;  
-}
-.navBar button:active{
-    border-bottom:  2px solid purple;
-}
-.navBar button.ativo{
-    border-bottom:  6px solid purple;  
+  transform: translateY(100%);
 }
 
-.pesquisa{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    bottom: 80px;     
-    right: 10px;    
-    width: 60px; 
-    height: 60px;
-    border-radius: 50%;
-    background: #BA55D3;
-    box-shadow: inset 5px 5px 28px #7b388b,
-                inset -5px -5px 28px #f972ff;
-    
-    transition: transform 0.3s;
-    transform: translateY(0);
-    border: none;
+.navBar button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+.navBar button img {
+  width: 30px;
+  height: 30px;
+}
+.navBar button:active {
+  border-bottom: 2px solid purple;
+}
+.navBar button.ativo {
+  border-bottom: 6px solid purple;
+}
 
+.pesquisa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 80px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ba55d3;
+  box-shadow: inset 5px 5px 28px #7b388b, inset -5px -5px 28px #f972ff;
 
-
+  transition: transform 0.3s;
+  transform: translateY(0);
+  border: none;
 }
 .pesquisa.hide {
-    transform: translateY(100%);
-  }
-
-
-.cont{
-    border-radius: 10px;
-    background-color: rgba(192,192,192,0.4) ; 
-    margin: 10px;
+  transform: translateY(100%);
 }
 
-main img{
-    height: 40px;
-    width: 40px;
-    border-radius: 20px;
+.cont {
+  border-radius: 10px;
+  background-color: rgba(192, 192, 192, 0.4);
+  margin: 10px;
 }
-.footer button img{
-     height: 20px;
-     width: 20px; 
-    
-} 
-.footer button{
-    background-color: rgba(0,0,0,0);
-    border: none; 
-    color: black;
+
+main img {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+}
+.footer button img {
+  height: 20px;
+  width: 20px;
+}
+.footer button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: black;
 }
 
 .mainImage img {
-    height: 100% ;
-    width: 90%;    
-    border-radius: 0%; 
-    margin: 10px;
+  height: 100%;
+  width: 90%;
+  border-radius: 0%;
+  margin: 10px;
 }
 
-.dicas{
-    height: 150px;
-    overflow-x: auto ;
-    white-space: nowrap;
-
+.dicas {
+  height: 150px;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
-.dicasScroll{
-    display: inline-block;
+.dicasScroll {
+  display: inline-block;
 }
 
-.dicasImg{
-    height: 130px;
-    width: 130px;
-    border-radius: 10px;
-    border: none;
-    margin: 5px;
-    background-color: rgba(186,85,211,0.5);
+.dicasImg {
+  height: 130px;
+  width: 130px;
+  border-radius: 10px;
+  border: none;
+  margin: 5px;
+  background-color: rgba(186, 85, 211, 0.5);
 }
 .dicasImg img {
-    height: 100px; 
-    width: 100px; 
+  height: 100px;
+  width: 100px;
 }
-#news-container div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#news-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#news-container button{
-
-    background-color: rgba(0,0,0,0);
-    border: none; 
+#news-container button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
 }
 
 #news-container img {
-    width: 150px;
-    height: 134px;
+  width: 150px;
+  height: 134px;
 }
-#noticiasContainer { 
-    display: none;
+#noticiasContainer {
+  display: none;
 }
 
-
-.buttons{
-    display: flex;
-    justify-content: center;
+.buttons {
+  display: flex;
+  justify-content: center;
 }
 .buttons button {
-    height: 40px; 
-    width: 50%;
-    border: none;
-    background-color: rgba(0,0,0,0);
+  height: 40px;
+  width: 50%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
 }
-.buttons button.ativo{
-    border-bottom:  2px solid purple; 
+.buttons button.ativo {
+  border-bottom: 2px solid purple;
 }
-
-
-
 
 main #socialContainer .cont .head {
-    display: flex;
-    align-items: center;
-    
-
+  display: flex;
+  align-items: center;
 }
 
-
-main #socialContainer .cont div img  {
-    margin: 10px;
+main #socialContainer .cont div img {
+  margin: 10px;
 }
 main #socialContainer .cont .user {
-    margin: 0;
-
+  margin: 0;
 }
-
-
-
-
-
-
-
-
-
-
 
 /*vacinas*/
 
-.vacinas h2{
-    text-align: center; 
-    font-size: 20px;
+.vacinas h2 {
+  text-align: center;
+  font-size: 20px;
 }
 
 .vas {
-    border-radius: 10px;
-    background-color: rgba(192,192,192,0.4) ; 
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
-    border: solid 1px green;  
-
+  border-radius: 10px;
+  background-color: rgba(192, 192, 192, 0.4);
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border: solid 1px green;
 }
 .vas div img {
-    margin: 30px ;
+  margin: 30px;
 }
 .vasNot {
-    border-radius: 10px;
-    background-color: rgba(192,192,192,0.4) ; 
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    border: solid 1px red;  
-
-
-} 
+  border-radius: 10px;
+  background-color: rgba(192, 192, 192, 0.4);
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  border: solid 1px red;
+}
 .vasNot div img {
-    margin: 30px ;
-
-
-
+  margin: 30px;
 }
 
-
-
-#vacinaContainer{display: none;}
-#pesquisaContainer{display: none;}
-
+#vacinaContainer {
+  display: none;
+}
+#pesquisaContainer {
+  display: none;
+}
 
 #pesquisaContainer input {
-    height: 30px;
-    width: 100%;
-    border-radius: 10px;
-    border: solid 1px #7b388b;
+  height: 30px;
+  width: 100%;
+  border-radius: 10px;
+  border: solid 1px #7b388b;
 }
 
-.config{
-    height: 40px;
-    width: 80%;
-    margin: 10px;
-    background-color: #BA55D3;
-    color: white;
-    border-radius: 10px;
+.config {
+  height: 40px;
+  width: 80%;
+  margin: 10px;
+  background-color: #ba55d3;
+  color: white;
+  border-radius: 10px;
 }
 
-.buttonsConfig{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.buttonsConfig {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-#configContainer{display: none;}
+#configContainer {
+  display: none;
+}
 
-
-.send{display: none;} 
+.send {
+  display: none;
+}
 .send .public {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 .send .public button {
-    width: 130px;
-    height: 30px; 
-    background-color: rgba(186,85,211, 0.5) ;
-    border: none;
-    border-radius: 10px; 
-
+  width: 130px;
+  height: 30px;
+  background-color: rgba(186, 85, 211, 0.5);
+  border: none;
+  border-radius: 10px;
 }
 .send .public #close {
-    background-color: rgba(0,0,0, 0);
-    border: none;
-    color: black;
-    width: 50px;
-    height: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: black;
+  width: 50px;
+  height: 50px;
 }
 
 .send header {
-    display: flex;
-    align-items: center;
-    justify-content: left;
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
 .send header button {
-    margin: 10px;
-    width: 130px;
-    height: 30px; 
-    background-color: rgba(0,0,0, 0) ;
-    border: solid 1px #BA55D3; 
-    border-radius: 10px; 
+  margin: 10px;
+  width: 130px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  border: solid 1px #ba55d3;
+  border-radius: 10px;
 }
 
-.send .input{
-    display: flex;
-    width: 100%;
-    height: 500px;    
+.send .input {
+  display: flex;
+  width: 100%;
+  height: 500px;
 }
 
 .send input {
-    border: none; 
-    width: 100%;
-    height: 100%;  
+  border: none;
+  width: 100%;
+  height: 100%;
 }
 .txt p {
-    margin-left: 60px; 
+  margin-left: 60px;
 }
 
-.send .footerMidia{
-    position: fixed;
-    bottom: 0px;   
-    width: 100%;
-    height: 50px; 
-    background-color: snow;
-    display: flex;
-    justify-content: space-around;
-
+.send .footerMidia {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 50px;
+  background-color: snow;
+  display: flex;
+  justify-content: space-around;
 }
 
 .send .footerMidia button {
-    border: none;
-    background-color: rgba(0,0,0,0);
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
 }
 .send .footerMidia img {
-    width: 40px; 
-    height: 50px;
-
+  width: 40px;
+  height: 50px;
 }
-.sendV{display: none;}
-
-.sendV fieldset{
-    display: flex;
-    flex-direction: column;
-    border: none;
+.sendV {
+  display: none;
 }
-.sendV input{
-    margin: 10px;
-    border: 1px solid #BA55D3;
-    height: 36px;  
-    width:90%;
-    border-radius: 10px;  
-    background-color: rgba(0,0,0, 0);
+
+.sendV fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+.sendV input {
+  margin: 10px;
+  border: 1px solid #ba55d3;
+  height: 36px;
+  width: 90%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .sendV .public {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 .sendV .public button {
-    width: 130px;
-    height: 30px; 
-    background-color: rgba(186,85,211, 0.5) ;
-    border: none;
-    border-radius: 10px; 
-
+  width: 130px;
+  height: 30px;
+  background-color: rgba(186, 85, 211, 0.5);
+  border: none;
+  border-radius: 10px;
 }
 .sendV header {
-    display: flex;
-    align-items: center;
-    justify-content: center0;
+  display: flex;
+  align-items: center;
+  justify-content: center0;
 }
 
-::placeholder{
-    color: black;
-    text-indent: 10px; 
-} 
+::placeholder {
+  color: black;
+  text-indent: 10px;
+}
