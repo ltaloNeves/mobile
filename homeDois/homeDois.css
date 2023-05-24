@@ -1,0 +1,259 @@
+*{text-decoration: none; color: black;} 
+
+img{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px
+
+
+}
+hr{background-color: black;}
+
+
+
+.navBar{
+    position: fixed;
+    bottom: 0px;   
+    left: 0;
+    width: 100vw;
+    height: 63px;
+    background-color: snow;
+    display: flex;
+    justify-content: space-around;
+    transition: transform 0.3s;
+    transform: translateY(0);
+    opacity: 1;
+ 
+
+
+}
+.navBar.hide {
+    transform: translateY(100%);
+  }
+
+.navBar button{
+    background-color: rgba(0,0,0,0);
+    border: none;
+     
+
+}
+.navBar button:active{
+    border-bottom:  2px solid purple;
+}
+.navBar button.ativo{
+    border-bottom:  6px solid purple;  
+}
+
+.pesquisa{
+    display: block;
+    position: fixed;
+    bottom: 80px;     
+    right: 10px;    
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #BA55D3;
+    box-shadow: inset 5px 5px 28px #7b388b,
+                inset -5px -5px 28px #f972ff;
+    
+    transition: transform 0.3s;
+    transform: translateY(0);
+    border: none;
+
+
+
+}
+.pesquisa.hide {
+    transform: translateY(100%);
+  }
+
+
+.cont{
+    border-radius: 10px;
+    background-color: rgba(192,192,192,0.4) ; 
+    margin: 10px;
+}
+
+main img{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+.footer button img{
+     height: 20px;
+     width: 20px; 
+    
+} 
+.footer button{
+    background-color: rgba(0,0,0,0);
+    border: none; 
+    color: black;
+}
+
+.mainImage img {
+    height: 100% ;
+    width: 90%;    
+    border-radius: 0%; 
+    margin: 10px;
+}
+
+.dicas{
+    height: 150px;
+    overflow-x: auto ;
+    white-space: nowrap;
+
+}
+
+.dicasScroll{
+    display: inline-block;
+}
+
+.dicasImg{
+    height: 130px;
+    width: 130px;
+    border-radius: 10px;
+    border: none;
+    margin: 5px;
+    background-color: rgba(186,85,211,0.5);
+}
+.dicasImg img {
+    height: 100px; 
+    width: 100px; 
+}
+#news-container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#news-container button{
+
+    background-color: rgba(0,0,0,0);
+    border: none; 
+}
+
+#news-container img {
+    width: 150px;
+    height: 134px;
+}
+#noticiasContainer { 
+    display: none;
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.buttons button {
+    height: 40px; 
+    width: 50%;
+    border: none;
+    background-color: rgba(0,0,0,0);
+}
+.buttons button.ativo{
+    border-bottom:  2px solid purple; 
+}
+
+
+
+
+main #socialContainer .cont .head {
+    display: flex;
+    align-items: center;
+    
+
+}
+
+
+main #socialContainer .cont div img  {
+    margin: 10px;
+}
+main #socialContainer .cont .user {
+    margin: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*vacinas*/
+
+.vacinas h2{
+    text-align: center; 
+}
+
+.vas {
+    border-radius: 10px;
+    background-color: rgba(192,192,192,0.4) ; 
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+    border: solid 1px green;  
+
+}
+.vas div img {
+    margin: 30px ;
+}
+.vasNot {
+    border-radius: 10px;
+    background-color: rgba(192,192,192,0.4) ; 
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    border: solid 1px red;  
+
+
+} 
+.vasNot div img {
+    margin: 30px ;
+
+
+
+}
+
+
+
+#vacinaContainer{display: none;}
+#pesquisaContainer{display: none;}
+
+
+#pesquisaContainer input {
+    height: 30px;
+    width: 100%;
+    border-radius: 10px;
+    border: solid 1px #7b388b;
+}
+
+.config{
+    height: 40px;
+    width: 80%;
+    margin: 10px;
+    background-color: #BA55D3;
+    color: white;
+    border-radius: 10px;
+}
+
+.buttonsConfig{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#configContainer{display: none;}
