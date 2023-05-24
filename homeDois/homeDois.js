@@ -3,19 +3,20 @@ const sendBox = document.getElementById('send');
 const home = document.getElementById('mainContainer');
 const close = document.getElementById('close');
 const sendV = document.getElementById('sendV');
+const pesquisarDois = document.getElementById('pesquisaDoisNews')
+
 
  
 pesquisar.addEventListener('click', function() {
   sendBox.style.display = 'block';
   home.style.display = 'none';
-
   sendBox.classList.add('ativo');
   pesquisar.classList.remove('ativo');
 });
 
 close.addEventListener('click', function() {
   sendBox.style.display = 'none';
-  home.style.display = 'block';
+  home.style.display = 'block'; 
 });
 
 document.addEventListener('click', function(event) {
@@ -23,7 +24,7 @@ document.addEventListener('click', function(event) {
     sendBox.style.display = 'none';
     home.style.display = 'block';
   }
-});
+}); 
 
 
 
@@ -165,3 +166,17 @@ document.getElementById('pesquisaInput').addEventListener('keyup', function(even
 
 
 
+pesquisarDois.addEventListener('click',  function() {
+  sendV.style.display = 'block';
+  carteiraContainer.style.display = 'none'
+  sendV.classList.add('ativo');
+  pesquisar.style.display= 'none'
+
+})
+
+document.addEventListener('click', function(event) {
+  if (!event.target.closest('#pesquisaDoisNews') && !event.target.closest('#sendV')) {
+    sendV.style.display = 'none';
+    carteiraContainer.style.display = 'block';
+  }
+}); 

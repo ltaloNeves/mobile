@@ -338,6 +338,7 @@ main #socialContainer .cont .user {
     height: 50px;
 
 }
+.sendV{display: none;}
 
 .sendV fieldset{
     display: flex;
@@ -369,5 +370,5 @@ main #socialContainer .cont .user {
 .sendV header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center0;
 }
