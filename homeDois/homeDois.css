@@ -57,7 +57,9 @@ hr{background-color: black;}
 }
 
 .pesquisa{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     bottom: 80px;     
     right: 10px;    
