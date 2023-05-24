@@ -262,3 +262,78 @@ main #socialContainer .cont .user {
 }
 
 #configContainer{display: none;}
+
+
+.send{display: none;} 
+.send .public {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.send .public button {
+    width: 130px;
+    height: 30px; 
+    background-color: rgba(186,85,211, 0.5) ;
+    border: none;
+    border-radius: 10px; 
+
+}
+.send .public #close {
+    background-color: rgba(0,0,0, 0);
+    border: none;
+    color: black;
+    width: 50px;
+    height: 50px;
+}
+
+.send header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.send header button {
+    margin: 10px;
+    width: 130px;
+    height: 30px; 
+    background-color: rgba(0,0,0, 0) ;
+    border: solid 1px #BA55D3; 
+    border-radius: 10px; 
+}
+
+.send .input{
+    display: flex;
+    width: 100%;
+    height: 500px;    
+}
+
+.send input {
+    border: none; 
+    width: 100%;
+    height: 100%;  
+}
+.txt p {
+    margin-left: 60px; 
+}
+
+.send .footerMidia{
+    position: fixed;
+    bottom: 0px;   
+    width: 100%;
+    height: 50px; 
+    background-color: snow;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.send .footerMidia button {
+    border: none;
+    background-color: rgba(0,0,0,0);
+}
+.send .footerMidia img {
+    width: 40px; 
+    height: 50px;
+
+}
+

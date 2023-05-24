@@ -132,3 +132,29 @@ document.getElementById('pesquisaInput').addEventListener('keyup', function(even
     event.preventDefault();
   }
 })
+
+
+const pesquisar = document.getElementById('pesquisa');
+const sendBox = document.getElementById('send');
+const home = document.getElementById('mainContainer');
+const close = document.getElementById('close');
+
+pesquisar.addEventListener('click', function() {
+  sendBox.style.display = 'block';
+  home.style.display = 'none';
+
+  sendBox.classList.add('ativo');
+  pesquisar.classList.remove('ativo');
+});
+
+close.addEventListener('click', function() {
+  sendBox.style.display = 'none';
+  home.style.display = 'block';
+});
+
+document.addEventListener('click', function(event) {
+  if (!event.target.closest('#pesquisa') && !event.target.closest('#send')) {
+    sendBox.style.display = 'none';
+    home.style.display = 'block';
+  }
+});
