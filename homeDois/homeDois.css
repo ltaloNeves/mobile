@@ -211,6 +211,10 @@ main #socialContainer .cont .user {
   border-radius: 10px;
   border: solid 1px #7b388b;
 }
+.vasNot p {
+  color: rgba(10, 10, 10, 0.4);
+
+}
 
 .config {
   height: 40px;
