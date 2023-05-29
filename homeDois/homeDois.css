@@ -181,7 +181,6 @@ main #socialContainer .cont .user {
   display: flex;
   align-items: center;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  border: solid 1px green;
 }
 .vas div img {
   margin: 30px;
@@ -192,7 +191,6 @@ main #socialContainer .cont .user {
   margin: 10px;
   display: flex;
   align-items: center;
-  border: solid 1px red;
 }
 .vasNot div img {
   margin: 30px;
