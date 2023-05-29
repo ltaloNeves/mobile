@@ -221,6 +221,7 @@ main #socialContainer .cont .user {
   background-color: #ba55d3;
   color: white;
   border-radius: 10px;
+  border: none;
 }
 
 .buttonsConfig {
